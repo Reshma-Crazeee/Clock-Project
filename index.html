@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Clock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"> -->
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="sub-main">
+            <div class="clock">
+                <img src="./images/orders.jpg" alt="" width="110px" height="110px" id="size">
+                <div class="word">CLOCK</div>
+            </div>
+            <div class="timebox">
+                <div class="box" id="time">
+                    TIME
+                </div>
+                <div class="box sets">
+                    <div id="hours">00</div>
+                    <div id="timing">hours</div>
+                </div>
+                <span style="color:#8a11bf; font-size: 50px;">:</span>
+                <div class="box sets">
+                    <div id="minutes">00</div>
+                    <div id="timing">mins</div>
+                </div>
+                <span style="color:#8a11bf; font-size: 50px;">:</span>
+                <div class="box sets">
+                    <div id="seconds">00</div>
+                    <div id="timing">secs</div>
+                </div>
+                <div class="box meridiem">
+                    <div id="meri">AM</div>
+                </div>
+                <div class="second"></div>
+                <div class="third"></div>
+            </div>
+        </div> 
+        <div class="new">
+            <div class="row">
+                <div class="one">
+                    <i class="fa-solid fa-sun-bright fa-2x" id="logo"></i>
+                    <div class="wake">Set wake up time</div>
+                    <div class="choose">
+                        <select name="am" id="am"  class="opt1">
+                        <option selected disabled>Set Time</option>
+                        <option value="0">12 AM - 01 AM</option>
+                        <option value="1">01 AM - 02 AM</option>
+                        <option value="2">02 AM - 03 AM</option>
+                        <option value="3">03 AM - 04 AM</option>
+                        <option value="4">04 AM - 05 AM</option>
+                        <option value="5">05 AM - 06 AM</option>
+                        <option value="6">06 AM - 07 AM</option>
+                        <option value="7">07 AM - 08 AM</option>
+                        <option value="8">08 AM - 09 AM</option>
+                        <option value="9">09 AM - 10 AM</option>
+                        <option value="10">10 AM - 11 AM</option>
+                        <option value="11">11 AM - 12 PM</option>
+                        <option value="12">12 PM - 01 PM</option>
+                        <option value="13">01 PM - 02 PM</option>
+                        <option value="14">02 PM - 03 PM</option>
+                        <option value="15">03 PM - 04 PM</option>
+                        <option value="16">04 PM - 05 PM</option>
+                        <option value="17">05 PM - 06 PM</option>
+                        <option value="18">06 PM - 07 PM</option>
+                        <option value="19">07 PM - 08 PM</option>
+                        <option value="20">08 PM - 09 PM</option>
+                        <option value="21">09 PM - 10 PM</option>
+                        <option value="22">10 PM - 11 PM</option>
+                        <option value="23">11 PM - 12 AM</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="border"></div>
+
+                <div class="one">
+                    <i class="fa-solid fa-fork-knife fa-2x" id="logo1"></i>
+                    <div class="wake">Set lunch time</div>
+                    <div class="choose h1">
+                        <select name="am" id="am1" class="opt2">
+                            <option selected disabled>Set Time</option>
+                            <option value="0">12 AM - 01 AM</option>
+                            <option value="1">01 AM - 02 AM</option>
+                            <option value="2">02 AM - 03 AM</option>
+                            <option value="3">03 AM - 04 AM</option>
+                            <option value="4">04 AM - 05 AM</option>
+                            <option value="5">05 AM - 06 AM</option>
+                            <option value="6">06 AM - 07 AM</option>
+                            <option value="7">07 AM - 08 AM</option>
+                            <option value="8">08 AM - 09 AM</option>
+                            <option value="9">09 AM - 10 AM</option>
+                            <option value="10">10 AM - 11 AM</option>
+                            <option value="11">11 AM - 12 PM</option>
+                            <option value="12">12 PM - 01 PM</option>
+                            <option value="13">01 PM - 02 PM</option>
+                            <option value="14">02 PM - 03 PM</option>
+                            <option value="15">03 PM - 04 PM</option>
+                            <option value="16">04 PM - 05 PM</option>
+                            <option value="17">05 PM - 06 PM</option>
+                            <option value="18">06 PM - 07 PM</option>
+                            <option value="19">07 PM - 08 PM</option>
+                            <option value="20">08 PM - 09 PM</option>
+                            <option value="21">09 PM - 10 PM</option>
+                            <option value="22">10 PM - 11 PM</option>
+                            <option value="23">11 PM - 12 AM</option>
+                            </select>
+                    </div>
+                </div>
+                
+                <div class="border"></div>
+                
+                <div class="one">
+                    <i class="fa-solid fa-snooze fa-2x" id="logo2"></i>
+                    <div class="wake">Set nap time</div>
+                    <div class="choose h2">
+                        <select name="am" id="am2" class="opt3">
+                            <option selected disabled>Set Time</option>
+                            <option value="0">12 AM - 01 AM</option>
+                            <option value="1">01 AM - 02 AM</option>
+                            <option value="2">02 AM - 03 AM</option>
+                            <option value="3">03 AM - 04 AM</option>
+                            <option value="4">04 AM - 05 AM</option>
+                            <option value="5">05 AM - 06 AM</option>
+                            <option value="6">06 AM - 07 AM</option>
+                            <option value="7">07 AM - 08 AM</option>
+                            <option value="8">08 AM - 09 AM</option>
+                            <option value="9">09 AM - 10 AM</option>
+                            <option value="10">10 AM - 11 AM</option>
+                            <option value="11">11 AM - 12 PM</option>
+                            <option value="12">12 PM - 01 PM</option>
+                            <option value="13">01 PM - 02 PM</option>
+                            <option value="14">02 PM - 03 PM</option>
+                            <option value="15">03 PM - 04 PM</option>
+                            <option value="16">04 PM - 05 PM</option>
+                            <option value="17">05 PM - 06 PM</option>
+                            <option value="18">06 PM - 07 PM</option>
+                            <option value="19">07 PM - 08 PM</option>
+                            <option value="20">08 PM - 09 PM</option>
+                            <option value="21">09 PM - 10 PM</option>
+                            <option value="22">10 PM - 11 PM</option>
+                            <option value="23">11 PM - 12 AM</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div id="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FREE TIME !!</div>
+                <img src="images/files.png"" id="imgone" alt="">
+            </div>
+            <div id="wish" style="display: none;"></div>
+                <input type="button" class="party" onclick="boom()" value="Party Time !" id="btn">          
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
